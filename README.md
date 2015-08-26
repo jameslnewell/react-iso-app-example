@@ -1,3 +1,3 @@
 # react-iso-app-example
 
-An isomorphic app written in order to learn React, Flux and ES6.
+An isomorphic app written to learn React, Flux and ES6.
