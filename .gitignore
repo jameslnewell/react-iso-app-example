@@ -2,3 +2,5 @@
 node_modules
 public/index.js
 public/index.css
+!lib/components/*
+!lib/modules/**/components/*
