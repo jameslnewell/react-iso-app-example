@@ -3,6 +3,7 @@
   "dependencies": {
     "babel": "^5.8.21",
     "express": "^4.13.3",
+    "google-map-react": "^0.4.1",
     "iso-app": "iso-js/app",
     "iso-app-renderer-react": "^1.0.4",
     "react": "^0.13.3"
@@ -22,6 +23,5 @@
     "server.watch": "nodemon ./lib/server.js",
     "start": "node ./lib/server.js",
     "build": "npm run styles.build && npm run scripts.build"
-
   }
 }
