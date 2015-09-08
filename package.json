@@ -18,8 +18,8 @@
   "scripts": {
     "scripts.build": "browserify -t babelify ./lib/client.js -o ./public/index.js",
     "scripts.watch": "watchify -t babelify ./lib/client.js -o ./public/index.js",
-    "styles.build": "sass-composer ./assets/index.scss -o ./public/index.css",
-    "styles.watch": "sass-composer ./assets/index.scss -o ./public/index.css --watch",
+    "styles.build": "sass-composer ./index.scss -o ./public/index.css",
+    "styles.watch": "sass-composer ./index.scss -o ./public/index.css --watch",
     "server.watch": "nodemon ./lib/server.js",
     "start": "node ./lib/server.js",
     "build": "npm run styles.build && npm run scripts.build"

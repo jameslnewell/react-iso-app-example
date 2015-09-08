@@ -1,0 +1,13 @@
+$grid_prefix: 'data-';
+
+@import "sass-grid/compiled";
+@import "./components/layout";
+@import "./components/pages/home";
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+

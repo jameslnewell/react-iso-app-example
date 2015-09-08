@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Layout from '../../../components/Layout';
-import SearchForm from './SearchForm';
-import SearchResults from './SearchResults';
+import Layout from '../../layout/index';
+import SearchForm from './search-form';
+import SearchResults from './search-results';
 
 var results = [
   {id: 1, charity: 'St Vincent De Pauls'},
@@ -33,7 +33,14 @@ export default class extends React.Component {
         <br/>
         <SearchForm onSubmit={this.handleSubmit.bind(this)}/>
         <br/>
-        {(this.state.searched ? <SearchResults results={this.state.results}/> : null)}
+        {(
+          this.state.searched ?
+          <div>
+            <SearchResults results={this.state.results}/>
+            <br/>
+          </div>
+          : null
+        )}
       </Layout>
     </body>;
   }
